@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <title>JSP Page</title>
+        <title>Login Form</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        
-           <h1>JSP Page </h1>
-      
+        <center>
+            <h1> Registration Form</h1>
+        <Form action="LoginServlet" method="post">
+            Enter Username: <input type="text" Name="username"><br><br>
+            Enter Password: <input type="password" Name="passwd"><br><br>
+            <input type="reset" value="RESET">
+            <input type="Submit" value="SUBMIT">
+        </form>
+        </center>
     </body>
 </html>
