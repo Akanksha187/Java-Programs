@@ -1,17 +1,24 @@
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page forward action tag</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>JSP Page</title>
     </head>
     <body>
-        <h1>JSP Page forward action tag</h1>
-        <h1>JSP Page</h1>
-        <h1>This is my index page</h1>
-        <jsp:forward page="printdate.jsp">
-            <jsp:param name="uname" value="Akanksha"></jsp:param>
-        </jsp:forward>
+        <h1>Use of Intrinsic Objects in JSP</h1>
+        <h1>Request Object </h1>
+        Query String <%=request.getQueryString()%><br>
+        Context Path <%=request.getContextPath()%><br>
+        Remote Host <%=request.getRemoteHost()%><br>
+        Remote Address <%=request.getRemoteAddr()%><br>
+        <h1>Response Object </h1>
+        Character Encoding Type <%=response.getCharacterEncoding()%><br>
+        Content Type <%=response.getContentType()%><br>
+        Locale <%=response.getLocale()%><br>
+        <h1>Session Object </h1>
+        ID <%=session.getId()%><br>
+        Creation Time <%=new java.util.Date(session.getCreationTime())%><br>
+        Last Access Time<%=new java.util.Date(session.getLastAccessedTime())%><br>
     </body>
 </html>
